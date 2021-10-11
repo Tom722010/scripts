@@ -1,9 +1,12 @@
 name: linux
   
 on: 
-  push:
-    paths:
-      - linux
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: 'hello'
+        required: true
+
 
 jobs:
   build:
